@@ -1,0 +1,15 @@
+# Environment files
+.env
+
+# Compiled binaries
+main.exe
+
+# IDE folders
+.idea/
+
+# Unused Go files (manually specify if needed)
+# Example: unused_file.go
+
+# Go build artifacts
+*.exe
+*.out
