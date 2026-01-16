@@ -2,6 +2,7 @@ package redis
 
 import (
 	"context"
+	"log"
 	"os"
 	"strconv"
 
@@ -31,6 +32,6 @@ func ConnectRedis() {
 		DB:       db,
 	})
 	if err := RDB.Ping(ctx).Err(); err != nil {
-		panic(err.Error())
+		log.Printf("Failed to connect to Redis: %v", err)
 	}
 }
